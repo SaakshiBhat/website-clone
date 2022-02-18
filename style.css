@@ -1,0 +1,315 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+header{
+    position: -webkit-sticky;
+    position: sticky;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: #fff;
+    z-index: 1000;
+}
+
+header .inner{
+    position: relative;
+    width: 76%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 13px 12% 0 12%;
+}
+
+header .logo img{
+    width: auto;
+    height: 5vh;
+
+}
+
+.menubar ul{
+    position: relative;
+    display: flex;
+}
+.menubar ul li{
+    list-style: none;   
+}
+.menubar ul li a {
+    display: flex;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+    color: #4c576b;
+    padding: 30px; 
+}
+
+.hiddenmenu{
+    display: none;
+}
+
+
+.contain{
+    width: 76%;
+    height: 600px;
+    margin: 40px 12% 0 12%;
+    display: flex;
+    align-items: center;
+}
+
+.left{
+    position: relative;
+    width:50%;
+    order: 0;
+}
+
+
+.title h1{
+    font-size: 70px;
+    font-weight: 600;
+    color: #203152;  
+    width: 90%;
+}
+
+.subtitle{
+    font-size: 25px;
+    margin: 8vh 0;
+    color: #4b5871;
+    width: 75%;
+}
+
+.hori-line{
+    background-color: #203152;
+    width: 1.2vw;
+    border: 0.2vw solid #203152;
+    border-radius: 0.2vw
+}
+
+.apply_button{
+    width: fit-content;
+    padding: 3px 50px;
+    border: 2px solid #583e81;
+    border-radius: 2vw;
+    color: #203152;
+    font-weight: bold;
+    margin: 10vh 0;
+    z-index: 10;
+}
+
+
+.left p{
+    font-size: 25px;
+    margin-left: 20px;
+}
+
+.right{
+    position: relative;
+    width: 50%;
+}
+
+.right:nth-child(even){
+    order: 0;
+}
+
+video{
+    position: relative;
+    width: 100%;
+    
+}
+
+
+.frames{
+    width: 60%;
+    height: 600px;
+    margin: 100px 20% 0 20%;
+    display: flex;
+    align-items: center;
+    box-shadow: 2px 2px 5px 5px #ccc;
+    border-radius: 15px;
+
+}
+
+.frames .image{
+    position: relative;
+    width: 50%;
+    order: 0;
+}
+.image video{
+    position: relative;
+    width: 100%;
+    height: 590px;
+}
+
+.frames .text{
+    width: 50%;
+ 
+}
+
+.text h1{
+    font-size: 55px;
+    font-weight: 600;
+    color: #203152;  
+    width: 70%;
+}
+
+.frames .image1{
+    position: relative;
+    width: 50%;
+    order: 1;
+}
+
+.image1 img{
+    position: relative;
+    width: 80%;
+    margin-left:10% ;
+
+}
+
+.frames .text1{
+    width: 50%;
+    height: 100%;
+    background-color: #6d3afe;
+    padding: 5% 0 0 2%;
+    border-radius: 15px;
+}
+
+.text1 h1{
+    font-size: 55px;
+    font-weight: 600;
+    color: #fff;  
+    width: 70%;
+    
+}
+
+footer{
+    background-color: #4a3083;
+    margin-top: 50px;
+    border-top: 1px solid black;
+    border-radius: 2px;
+}
+
+footer .container{
+    position: relative;
+    width: 80%;
+    height: auto;
+    margin: 2% 10% 0 10% ;
+    padding-bottom: 40px;
+    display: flex;
+    justify-content: space-around;
+    color: #fff;
+}
+.container ul{
+    margin: 20px 0 0 0 ;
+}
+.container ul li{
+    list-style: none;
+}
+
+.container ul li a{
+   text-decoration: none;
+   color: #fff;
+}
+
+.container h3{
+    font-size: 20px;
+    font-weight: 400;
+}
+
+
+@media(max-width: 900px){
+    .menubar ul li{
+        display: none;
+    }
+    .hiddenmenu{
+        display: flex;
+     
+    }
+    .hiddenmenu img{
+        width: 20px;
+    }
+
+    
+.contain{
+    width: 80%;
+    height: auto;
+    margin: 40px 10% 0 10%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.left{
+    position: relative;
+    width:100%;
+    order: 0;
+    text-align: center;
+    
+}
+.left:first-child{
+    order: 10;
+}
+
+
+.title h1{
+    font-size: 54px;
+    font-weight: 600;
+    color: #203152;  
+    width: 100%;
+}
+
+.subtitle{
+    font-size: 25px;
+    margin:  0;
+    color: #4b5871;
+    width: 100%;
+}
+
+.hori-line{
+    background-color: #203152;
+    width: 1.3vw;
+    border: 0.2vw solid #203152;
+    border-radius: 0.2vw;
+    justify-self: center;
+    position: relative;
+    margin: 0 0 0 50%;
+}
+
+.apply_button{
+    width: 80%;
+    padding: 20px 50px;
+    border: 4px solid #583e81;
+    border-radius: 7vw;
+    color: #203152;
+    font-size: 35px;
+    font-weight: bold;
+    margin: 4vh 10%;
+    z-index: 10;
+}
+
+
+.left p{
+    font-size: 20px;
+    margin-left: 20px;
+}
+
+.right{
+    position: relative;
+    width: 100%;
+    order:1;
+}
+
+video{
+    position: relative;
+    width: 70vh;
+    margin-left: 10%;
+    
+}
+
+
+}
+
